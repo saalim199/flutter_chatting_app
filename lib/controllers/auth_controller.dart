@@ -19,7 +19,7 @@ class AuthController extends GetxController {
     loading(true);
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
-      Get.offAll(const HomePage());
+      Get.offAll(HomePage());
     } catch (e) {
       Get.snackbar('Error', e.toString());
     }
@@ -36,7 +36,7 @@ class AuthController extends GetxController {
         'name': name,
         'email': email,
       }, SetOptions(merge: true));
-      Get.offAll(const HomePage());
+      Get.offAll(HomePage());
     } catch (e) {
       Get.snackbar('Error', e.toString());
     }
@@ -47,7 +47,7 @@ class AuthController extends GetxController {
     loading(true);
     try {
       await _auth.signOut();
-      Get.offAll(const LoginPage());
+      Get.offAll(LoginPage());
     } catch (e) {
       Get.snackbar('Error', e.toString());
     }

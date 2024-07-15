@@ -103,7 +103,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       const SizedBox(width: 4),
                       GestureDetector(
                         onTap: () {
-                          Get.off(const LoginPage());
+                          Get.off(LoginPage());
                         },
                         child: const Text(
                           'Login Now',

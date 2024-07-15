@@ -10,7 +10,7 @@ class Routes {
 }
 
 final getPages = [
-  GetPage(name: Routes.loginPage, page: () => const LoginPage()),
+  GetPage(name: Routes.loginPage, page: () => LoginPage()),
   GetPage(name: Routes.registerPage, page: () => const RegisterPage()),
-  GetPage(name: Routes.homePage, page: () => const HomePage()),
+  GetPage(name: Routes.homePage, page: () => HomePage()),
 ];
